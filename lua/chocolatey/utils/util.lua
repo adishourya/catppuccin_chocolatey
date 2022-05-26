@@ -17,8 +17,8 @@ local hex_to_rgb = function(hex_str)
 
 	assert(string.find(hex_str, pat) ~= nil, "hex_to_rgb: invalid hex_str: " .. tostring(hex_str))
 
-	local red, green, blue = string.match(hex_str, pat)
-	return { tonumber(red, 16), tonumber(green, 16), tonumber(blue, 16) }
+	local color5, color9, color10 = string.match(hex_str, pat)
+	return { tonumber(color5, 16), tonumber(color9, 16), tonumber(color10, 16) }
 end
 
 ---@param fg string foreground color
@@ -78,7 +78,7 @@ function util.string_to_color(colors, value, default)
 		return value
 	end
 
-	local acceptable_colors = { "black", "red", "green", "blue", "magenta", "cyan", "white", "orange", "pink" }
+	local acceptable_colors = { "black", "color5", "color9", "color10", "magenta", "cyan", "white", "orange", "color6" }
 	for _, ac in ipairs(acceptable_colors) do
 		if string.match(value, ac) then
 			return colors[value]
@@ -120,23 +120,23 @@ function util.terminal(cp)
 	g.terminal_color_0 = cp.gray0
 	g.terminal_color_8 = cp.gray1
 
-	g.terminal_color_1 = cp.red
-	g.terminal_color_9 = cp.red
+	g.terminal_color_1 = cp.color5
+	g.terminal_color_9 = cp.color5
 
-	g.terminal_color_2 = cp.green
-	g.terminal_color_10 = cp.green
+	g.terminal_color_2 = cp.color9
+	g.terminal_color_10 = cp.color9
 
-	g.terminal_color_3 = cp.yellow
-	g.terminal_color_11 = cp.yellow
+	g.terminal_color_3 = cp.color8
+	g.terminal_color_11 = cp.color8
 
-	g.terminal_color_4 = cp.blue
-	g.terminal_color_12 = cp.blue
+	g.terminal_color_4 = cp.color10
+	g.terminal_color_12 = cp.color10
 
-	g.terminal_color_5 = cp.pink
-	g.terminal_color_13 = cp.pink
+	g.terminal_color_5 = cp.color6
+	g.terminal_color_13 = cp.color6
 
-	g.terminal_color_6 = cp.sky
-	g.terminal_color_14 = cp.sky
+	g.terminal_color_6 = cp.color11
+	g.terminal_color_14 = cp.color11
 
 	g.terminal_color_7 = cp.white
 	g.terminal_color_15 = cp.white

@@ -31,33 +31,33 @@ local clrs = require("chocolatey.core.color_palette")
 -- settings
 local sett = {
 	bkg = clrs.black3,
-	diffs = clrs.mauve,
+	diffs = clrs.color3,
 	extras = clrs.gray1,
-	curr_file = clrs.maroon,
-	curr_dir = clrs.flamingo,
+	curr_file = clrs.color4,
+	curr_dir = clrs.color2,
 }
 
 local mode_colors = {
-	["n"] = { "NORMAL", clrs.lavender },
-	["no"] = { "N-PENDING", clrs.lavender },
-	["i"] = { "INSERT", clrs.green },
-	["ic"] = { "INSERT", clrs.green },
-	["t"] = { "TERMINAL", clrs.green },
-	["v"] = { "VISUAL", clrs.flamingo },
-	["V"] = { "V-LINE", clrs.flamingo },
-	[""] = { "V-BLOCK", clrs.flamingo },
-	["R"] = { "REPLACE", clrs.maroon },
-	["Rv"] = { "V-REPLACE", clrs.maroon },
-	["s"] = { "SELECT", clrs.maroon },
-	["S"] = { "S-LINE", clrs.maroon },
-	[""] = { "S-BLOCK", clrs.maroon },
-	["c"] = { "COMMAND", clrs.peach },
-	["cv"] = { "COMMAND", clrs.peach },
-	["ce"] = { "COMMAND", clrs.peach },
-	["r"] = { "PROMPT", clrs.teal },
-	["rm"] = { "MORE", clrs.teal },
-	["r?"] = { "CONFIRM", clrs.mauve },
-	["!"] = { "SHELL", clrs.green },
+	["n"] = { "NORMAL", clrs.color13 },
+	["no"] = { "N-PENDING", clrs.color13 },
+	["i"] = { "INSERT", clrs.color9 },
+	["ic"] = { "INSERT", clrs.color9 },
+	["t"] = { "TERMINAL", clrs.color9 },
+	["v"] = { "VISUAL", clrs.color2 },
+	["V"] = { "V-LINE", clrs.color2 },
+	[""] = { "V-BLOCK", clrs.color2 },
+	["R"] = { "REPLACE", clrs.color4 },
+	["Rv"] = { "V-REPLACE", clrs.color4 },
+	["s"] = { "SELECT", clrs.color4 },
+	["S"] = { "S-LINE", clrs.color4 },
+	[""] = { "S-BLOCK", clrs.color4 },
+	["c"] = { "COMMAND", clrs.color7 },
+	["cv"] = { "COMMAND", clrs.color7 },
+	["ce"] = { "COMMAND", clrs.color7 },
+	["r"] = { "PROMPT", clrs.color12 },
+	["rm"] = { "MORE", clrs.color12 },
+	["r?"] = { "CONFIRM", clrs.color3 },
+	["!"] = { "SHELL", clrs.color9 },
 }
 
 local shortline = false
@@ -146,9 +146,9 @@ components.active[1][3] = {
 }
 
 -- there is a dilema: we need to hide Diffs if ther is no git info. We can do that, but this will
--- leave the right_semicircle colored with purple, and since we can't change the color conditonally
--- then the solution is to create two right_semicircles: one with a mauve sett.bkg and the other one normal
--- sett.bkg; both have the same fg (vi mode). The mauve one appears if there is git info, else the one with
+-- leave the right_semicircle colocolor5 with purple, and since we can't change the color conditonally
+-- then the solution is to create two right_semicircles: one with a color3 sett.bkg and the other one normal
+-- sett.bkg; both have the same fg (vi mode). The color3 one appears if there is git info, else the one with
 -- the normal sett.bkg appears. Fixed :)
 
 -- enable if git diffs are not available
@@ -298,7 +298,7 @@ components.active[2][1] = {
 	end,
 	enabled = is_enabled(shortline, winid, 80),
 	hl = {
-		fg = clrs.rosewater,
+		fg = clrs.color1,
 		bg = sett.bkg,
 	},
 }
@@ -311,7 +311,7 @@ components.active[2][2] = {
 	end,
 
 	hl = {
-		fg = clrs.red,
+		fg = clrs.color5,
 		bg = sett.bkg,
 	},
 	icon = "  ",
@@ -323,7 +323,7 @@ components.active[2][3] = {
 		return lsp.diagnostics_exist(lsp_severity.WARN)
 	end,
 	hl = {
-		fg = clrs.yellow,
+		fg = clrs.color8,
 		bg = sett.bkg,
 	},
 	icon = "  ",
@@ -335,7 +335,7 @@ components.active[2][4] = {
 		return lsp.diagnostics_exist(lsp_severity.INFO)
 	end,
 	hl = {
-		fg = clrs.sky,
+		fg = clrs.color11,
 		bg = sett.bkg,
 	},
 	icon = "  ",
@@ -347,7 +347,7 @@ components.active[2][5] = {
 		return lsp.diagnostics_exist(lsp_severity.HINT)
 	end,
 	hl = {
-		fg = clrs.rosewater,
+		fg = clrs.color1,
 		bg = sett.bkg,
 	},
 	icon = "  ",

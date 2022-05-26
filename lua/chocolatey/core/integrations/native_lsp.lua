@@ -5,10 +5,10 @@ function M.get(cp)
 	local virtual_text = cnf.integrations.native_lsp.virtual_text
 	local underlines = cnf.integrations.native_lsp.underlines
 
-	local error = cp.red
-	local warning = cp.yellow
-	local info = cp.sky
-	local hint = cp.rosewater
+	local error = cp.color5
+	local warning = cp.color8
+	local info = cp.color11
+	local hint = cp.color1
 
 	return {
 		-- These groups are for the native LSP cliencp. Some other LSP clients may
@@ -33,7 +33,7 @@ function M.get(cp)
 		LspDiagnosticsDefaultWarning = { fg = warning }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
 		LspDiagnosticsDefaultInformation = { fg = info }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
 		LspDiagnosticsDefaultHint = { fg = hint }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
-		LspSignatureActiveParameter = { fg = cp.peach },
+		LspSignatureActiveParameter = { fg = cp.color7 },
 		-- LspDiagnosticsFloatingError         = { }, -- Used to color "Error" diagnostic messages in diagnostics float
 		-- LspDiagnosticsFloatingWarning       = { }, -- Used to color "Warning" diagnostic messages in diagnostics float
 		-- LspDiagnosticsFloatingInformation   = { }, -- Used to color "Information" diagnostic messages in diagnostics float

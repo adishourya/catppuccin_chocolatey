@@ -117,7 +117,7 @@ integrations = {
 	which_key = false,
 	indent_blankline = {
 		enabled = true,
-		colored_indent_levels = false,
+		colocolor5_indent_levels = false,
 	},
 	dashboard = true,
 	neogit = false,
@@ -216,7 +216,7 @@ require("feline").setup({
 })
 ```
 
--   **Indent-blankline.nvim**: setting `enabled` to `true` enables this integration. `colored_indent_levels` enables char highlights per indent level. Follow the instructions [here](https://github.com/lukas-reineke/indent-blankline.nvim#with-custom-gindent_blankline_char_highlight_list) to set the latter up.
+-   **Indent-blankline.nvim**: setting `enabled` to `true` enables this integration. `colocolor5_indent_levels` enables char highlights per indent level. Follow the instructions [here](https://github.com/lukas-reineke/indent-blankline.nvim#with-custom-gindent_blankline_char_highlight_list) to set the latter up.
 -   **Lightline:** use this to set it up (Note: `catppuccin` is the only valid colorscheme name. It will pick the one set in your config):
 
 ```lua
@@ -262,7 +262,7 @@ integration = {
 
 #### API
 
-The API allows you fetch data from Catppuccin. It can be required as a Lua module:
+The API allows you fetch data from Catppuccin. It can be requicolor5 as a Lua module:
 
 ```lua
 local cp_api = require("catppuccin.api.<module>")
@@ -290,7 +290,7 @@ Here is an example:
 
 ```lua
 local colors = require'catppuccin.api.colors'.get_colors() -- fetch colors with API
-catppuccin.remap({ Comment = { fg = colors.flamingo }, })
+catppuccin.remap({ Comment = { fg = colors.color2 }, })
 ```
 
 #### Hooks

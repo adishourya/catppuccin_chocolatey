@@ -2,9 +2,9 @@ local M = {}
 
 function M.get(cp)
 	return {
-		tkLink = { fg = cp.blue },
-		tkBrackets = { fg = cp.pink },
-		tkTag = { fg = cp.sky },
+		tkLink = { fg = cp.color10 },
+		tkBrackets = { fg = cp.color6 },
+		tkTag = { fg = cp.color11 },
 	}
 end
 

@@ -1,29 +1,30 @@
 local color_palette = {
 
-	rosewater = "#F5E0DC", -- Rosewater
-	flamingo = "#d08b65", -- Flamingo
-	mauve = "#998596", -- Mauve
-	maroon = "#d67f6f", -- maroon
-	red = "#c65f5f", -- Red
-	pink = "#E8A2AF", -- pink
-	peach = "#d9b27c", -- Peach
-	yellow = "#e9d38d", -- Yellow
-	green = "#859e82", -- Green
-	blue = "#728797", -- Blue
-	sky = "#788897", -- Sky
-	teal = "#879f82", -- Teal
-	lavender = "#998396", -- Lavender
-	white = "#d1c6b4", -- White
+	color1 = "#F5E0DC", -- used in feline
+	color2 = "#d08b65", -- mapper Identifier , mkdCodeStart , mkdCodeEnd
+	color3 = "#998596", -- mapper : Statement
+	color4 = "#d67f6f", -- used in feline
+	color5 = "#c65f5f", -- mapper : ErrorMsg , SpellBad , Conditional , Repeat , Error , diffRemoved , DiffDelete , healthError,GlyphPalette1 , GlyphPalette9
+	color6 = "#E8A2AF", -- mapper : Substitute , Search , IncSearch , keyword , PreProc , Include , Special , htmlH1 , diffIndexline
+	color7 = "#d9b27c", -- mapper : MatchParen , Constant , Number , Float , Boolean , Label , diffNewFlie
+	color8 = "#e9d38d", -- mapper : SpellCap , WarningMsg,StorageClass , Structure ,Typedef,TODO,qlLinenr,diffChanged , diffOldFile, DiffChange, healthWarning, GlyphPalette3
+	color9 = "#859e82", -- mapper : CursorLineNr , SpellRare , TablineSel , String , diffAdded , DiffAdd
+	color10 = "#728797", -- mapper : Directory , Folded , MoreMsg , FloatBorder , Question , SpellLocal , Title , Function , Type , qfFileName , htmlH2 , diffFile , DiffText , GlyphPalette4
+	color11 = "#788897", -- mapper : Operator (+ , -)
+	-- color12 = "#a3be8c", -- Character (\n) , healthSuccess , GlyphPalette2 , GlyphPalette6
+	color12 = "#81a1c1", -- Character (\n) , healthSuccess , GlyphPalette2 , GlyphPalette6
+	color13 = "#998396",
+	white = "#d1c6b4",
 
-	gray2 = "#cdc0ad", -- Gray2
-	gray1 = "#c8baa4", -- Gray1
+	gray2 = "#cdc0ad", -- mapper Pmenu fg
+	gray1 = "#c8baa4", -- mapper : Conceal
 
-	gray0 = "#808080", -- Gray0
-	black4 = "#404040", -- Black3
-	black3 = "#252525", -- Black2 
-	black2 = "#181818", -- Black1
-	black1 = "#101010", -- Black1
-	black0 = "#000000", -- Black0
+	gray0 = "#808080",
+	black4 = "#404040",
+	black3 = "#252525",
+	black2 = "#181818",
+	black1 = "#101010",
+	black0 = "#000000",
 }
 
 return color_palette

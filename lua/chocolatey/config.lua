@@ -47,7 +47,7 @@ config.options = {
 		which_key = false,
 		indent_blankline = {
 			enabled = true,
-			colored_indent_levels = false,
+			colocolor5_indent_levels = false,
 		},
 		dashboard = true,
 		neogit = false,
