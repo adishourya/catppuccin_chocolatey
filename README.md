@@ -56,26 +56,16 @@ This port of Catppuccin is special because it was the first one and the one that
 
 You can use your favorite plugin manager for this. Here are some examples with the most popular ones:
 
-#### Vim-plug
-
-```lua
-Plug 'catppuccin/nvim', {'as': 'catppuccin'}
-```
 
 #### Packer.nvim
 
 ```lua
 use({
-	"catppuccin/nvim",
-	as = "catppuccin"
+	"adishourya/catppuccin_chocolatey",
+	as = "chocolatey"
 })
 ```
 
-#### Vundle
-
-```lua
-Plugin 'catppuccin/nvim', {'name': 'catppuccin'}
-```
 
 ### Setup
 
