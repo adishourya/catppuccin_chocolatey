@@ -19,7 +19,7 @@ local color_palette = {
 	gray2 = "#cdc0ad", -- mapper Pmenu fg
 	gray1 = "#c8baa4", -- mapper : Conceal
 
-	gray0 = "#808080",
+	gray0 = "#707070",
 	black4 = "#404040",
 	black3 = "#252525",
 	black2 = "#181818",
