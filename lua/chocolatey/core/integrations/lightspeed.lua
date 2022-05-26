@@ -13,14 +13,14 @@ end
 function M.get(cp)
 
 	if not get_prepared() then
-		local catppuccin = require("catppuccin")
-		if catppuccin.after_loading ~= nil then
-			catppuccin.after_loading = function ()
-				catppuccin.after_loading()
+		local chocolatey = require("chocolatey")
+		if chocolatey.after_loading ~= nil then
+			chocolatey.after_loading = function ()
+				chocolatey.after_loading()
 				require'lightspeed'.init_highlight()
 			end
 		else
-			catppuccin.after_loading = function ()
+			chocolatey.after_loading = function ()
 				require'lightspeed'.init_highlight()
 			end
 		end
