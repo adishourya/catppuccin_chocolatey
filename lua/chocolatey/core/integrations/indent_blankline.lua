@@ -4,7 +4,7 @@ function M.get(cp)
 
 	local hi = {
 		IndentBlanklineChar = { fg = cp.black3 },
-		IndentBlanklineContextChar = { fg = cp.white },
+		IndentBlanklineContextChar = { fg = cp.color14 },
 	}
 
 	if cnf.integrations.indent_blankline.colocolor5_indent_levels then

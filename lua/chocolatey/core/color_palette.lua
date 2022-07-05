@@ -2,7 +2,6 @@ local color_palette = {
 
 	color1 = "#F5E0DC", -- used in feline
 	color2 = "#d08b65", -- mapper Identifier , mkdCodeStart , mkdCodeEnd
-	-- color3 = "#8a92bb", -- mapper : Statement
 	color3 = "#bba88a", -- mapper : Statement
 	color4 = "#d67f6f", -- used in feline
 	color5 = "#c65f5f", -- mapper : ErrorMsg , SpellBad , Conditional , Repeat , Error , diffRemoved , DiffDelete , healthError,GlyphPalette1 , GlyphPalette9
@@ -15,6 +14,7 @@ local color_palette = {
 	-- color12 = "#a3be8c", -- Character (\n) , healthSuccess , GlyphPalette2 , GlyphPalette6
 	color12 = "#81a1c1", -- Character (\n) , healthSuccess , GlyphPalette2 , GlyphPalette6
 	color13 = "#998396",
+	color14 = "#8a92bb", -- mapper : Statement
 	white = "#d1c6b4",
 
 	gray2 = "#cdc0ad", -- mapper Pmenu fg
