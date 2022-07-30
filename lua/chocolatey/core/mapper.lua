@@ -168,6 +168,9 @@ local function get_base()
 		GlyphPalette6 = { fg = cp.color12 },
 		GlyphPalette7 = { fg = cp.white },
 		GlyphPalette9 = { fg = cp.color5 },
+
+		-- Go
+		goTSNamespace = { fg = cp.white, style = "bold" },
 	}
 end
 
