@@ -95,7 +95,7 @@ local function get_base()
 		Conditional = { fg = cp.color5 }, --  if, then, else, endif, switch, etcp.
 		Repeat = { fg = cp.color5 }, --   for, do, while, etcp.
 		Label = { fg = cp.color7 }, --    case, default, etcp.
-		Operator = { fg = cp.color11 }, -- "sizeof", "+", "*", etcp.
+		Operator = { fg = cp.color11,style="bold" }, -- "sizeof", "+", "*", etcp.
 		Keyword = { fg = cp.color6, style = cnf.styles.keywords }, --  any other keyword
 		-- Exception     = { }, --  try, catch, throw
 
@@ -171,6 +171,10 @@ local function get_base()
 
 		-- Go
 		goTSNamespace = { fg = cp.white, style = "bold" },
+		goTSNumber = { fg = cp.color9 },
+		goTSType = { fg = cp.color13 },
+		goTSOperator = {fg=cp.white,style="bold"},
+		operand = { fg = cp.white, style = "bold" },
 	}
 end
 
