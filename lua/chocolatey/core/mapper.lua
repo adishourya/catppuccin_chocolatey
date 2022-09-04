@@ -159,6 +159,73 @@ local function get_base()
 		healthSuccess = { fg = cp.color12 },
 		healthWarning = { fg = cp.color8 },
 		-- misc
+		-- LspSaga
+		LspSagaCodeActionTitle = { fg = cp.color9, bold = true },
+		LspSagaCodeActionBorder = { fg = cp.color12},
+		LspSagaCodeActionTrunCateLine = { link = 'LspSagaCodeActionBorder' },
+		LspSagaCodeActionContent = { fg = cp.color1, bold = true },
+		-- finder
+		LspSagaLspFinderBorder = { fg = cp.color10},
+		LspSagaAutoPreview = { fg = cp.color12},
+		LspSagaFinderSelection = { fg = cp.color3, bold = true },
+		TargetFileName = { fg = cp.color1},
+		FinderParam = { fg = cp.color14, bg = cp.color13, bold = true },
+		FinderVirtText = { fg = cp.color2},
+		DefinitionsIcon = { fg = cp.color8},
+		Definitions = { fg = cp.color14, bold = true },
+		DefinitionCount = { link = 'Title' },
+		ReferencesIcon = { fg = cp.color8},
+		References = { fg = cp.color13, bold = true },
+		ReferencesCount = { link = 'Title' },
+		ImplementsIcon = { fg = cp.color13},
+		Implements = { fg = cp.color13, bold = true },
+		ImplementsCount = { link = 'Title' },
+		--finder spinner
+		FinderSpinnerBorder = { fg = cp.color10},
+		FinderSpinnerTitle = { fg = cp.color6, bold = true },
+		FinderSpinner = { fg = cp.color6, bold = true },
+		-- definition
+		LspSagaDefPreviewBorder = { fg = cp.color10},
+		DefinitionPreviewIcon = { link = 'Title' },
+		DefinitionPreviewFile = { link = 'Define' },
+		DefinitionPreviewTip = { link = 'Comment' },
+		-- hover
+		LspSagaHoverBorder = { fg = cp.gray0},
+		LspSagaHoverTrunCateLine = { link = 'LspSagaHoverBorder' },
+		-- rename
+		LspSagaRenameBorder = { fg = cp.color14},
+		LspSagaRenameMatch = { link = 'Search' },
+		-- diagnostic
+		LspSagaDiagnosticSource = { fg = cp.color7},
+		LspSagaDiagnosticError = { link = 'DiagnosticError' },
+		LspSagaDiagnosticWarn = { link = 'DiagnosticWarn' },
+		LspSagaDiagnosticInfo = { link = 'DiagnosticInfo' },
+		LspSagaDiagnosticHint = { link = 'DiagnosticHint' },
+		LspSagaErrorTrunCateLine = { link = 'DiagnosticError' },
+		LspSagaWarnTrunCateLine = { link = 'DiagnosticWarn' },
+		LspSagaInfoTrunCateLine = { link = 'DiagnosticInfo' },
+		LspSagaHintTrunCateLine = { link = 'DiagnosticHint' },
+		LspSagaDiagnosticBorder = { fg = cp.color14},
+		LspSagaDiagnosticHeader = { fg = cp.color9},
+		LspSagaDiagnosticTruncateLine = { link = 'LspSagaDiagnosticBorder' },
+		ColInLineDiagnostic = { link = 'Comment' },
+		-- signture help
+		LspSagaSignatureHelpBorder = { fg = cp.gray0},
+		LspSagaShTrunCateLine = { link = 'LspSagaSignatureHelpBorder' },
+		-- lightbulb
+		LspSagaLightBulb = { link = 'DiagnosticSignHint' },
+		-- shadow
+		SagaShadow = { fg = 'black' },
+		-- float
+		LspSagaBorderTitle = { link = 'String' },
+		-- Outline
+		LSOutlinePreviewBorder = { fg = cp.color9},
+		OutlineIndentEvn = { fg = cp.color1},
+		OutlineIndentOdd = { fg = cp.color2},
+		OutlineFoldPrefix = { fg = cp.color4},
+		OutlineDetail = { fg = cp.gray0},
+		-- all floatwindow of lspsaga
+		LspFloatWinNormal = { link = 'Normal' },
 
 		-- glyphs
 		GlyphPalette1 = { fg = cp.color5 },
