@@ -6,10 +6,10 @@ config.options = {
 	term_colors = false,
 	styles = {
 		comments = "italic",
-		functions = "italic",
+		functions = "NONE",
 		keywords = "italic",
 		strings = "NONE",
-		variables = "italic",
+		variables = "NONE",
 	},
 	integrations = {
 		treesitter = true,

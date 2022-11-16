@@ -52,7 +52,7 @@ local function get_base()
 		NormalFloat = { fg = cp.white, bg = cp.black1 }, -- Normal text in floating windows.
 		FloatBorder = { fg = cp.color10 },
 		Pmenu = { bg = cp.black3, fg = cp.gray2 }, -- Popup menu: normal item.
-		PmenuSel = { fg = cp.white, bg = cp.black4, style = "bold" }, -- Popup menu: selected item.
+		PmenuSel = { fg = cp.black1, bg = cp.color8, style = "bold" }, -- Popup menu: selected item.
 		PmenuSbar = { bg = cp.black4 }, -- Popup menu: scrollbar.
 		PmenuThumb = { bg = cp.gray0 }, -- Popup menu: Thumb of the scrollbar.
 		Question = { fg = cp.color10 }, -- |hit-enter| prompt and yes/no questions
@@ -118,7 +118,7 @@ local function get_base()
 
 		Underlined = { style = "underline" }, -- (prefercolor5) text that stands out, HTML links
 		Bold = { style = "bold" },
-		Italic = { style = "italic" },
+		-- Italic = { style = "italic" },
 		-- ("Ignore", below, may be invisible...)
 		-- Ignore = { }, -- (prefercolor5) left blank, hidden  |hl-Ignore|
 
@@ -226,6 +226,13 @@ local function get_base()
 		OutlineDetail = { fg = cp.gray0},
 		-- all floatwindow of lspsaga
 		LspFloatWinNormal = { link = 'Normal' },
+
+		-- markid
+		markid1 = {fg=cp.color2},
+		markid2 = {fg=cp.color6},
+		markid3 = {fg=cp.color4},
+		markid4 = {fg=cp.color6},
+		markid5 = {fg=cp.color7},
 
 		-- glyphs
 		GlyphPalette1 = { fg = cp.color5 },

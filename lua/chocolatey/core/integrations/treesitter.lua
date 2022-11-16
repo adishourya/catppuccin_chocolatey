@@ -14,8 +14,8 @@ function M.get(cp)
 		-- TSError -> Error for example, so you do not have to define these unless
 		-- you explicitly want to support Treesitter's improved syntax awareness.
 		TSField = { fg = cp.color1 }, -- For fields.
-		TSProperty = { fg = cp.color8, style = "italic" }, -- Same as TSField.
-		TSInclude = { fg = cp.color12, style = "italic" }, -- For includes: #include in C, use or extern crate in Rust, or require in Lua.
+		TSProperty = { fg = cp.color8}, -- Same as TSField.
+		TSInclude = { fg = cp.color12}, -- For includes: #include in C, use or extern crate in Rust, or require in Lua.
 		TSOperator = { fg = operators, style = "bold" }, -- For any operator: +, but also -> and * in cp.
 		TSKeywordOperator = { fg = operators, style = "bold" }, -- For new keyword operator
 		TSPunctSpecial = { fg = cp.color4, style = "bold" }, -- For special punctutation that does not fall in the catagories before.
@@ -34,11 +34,11 @@ function M.get(cp)
 		TSConstBuiltin = { fg = cp.color13, style = cnf.styles.keywords }, -- For constant that are built in the language: nil in Lua.
 		TSFuncBuiltin = { fg = cp.color7, style = "italic" }, -- For builtin functions: table.insert in Lua.
 		TSTypeBuiltin = { fg = cp.color8, style = "italic" }, -- For builtin types.
-		TSVariableBuiltin = { fg = cp.color12, style = "italic" }, -- Variable names that are defined by the languages, like this or self.
+		TSVariableBuiltin = { fg = cp.color12}, -- Variable names that are defined by the languages, like this or self.
 
 		TSFunction = { fg = cp.color10, style = cnf.styles.functions }, -- For function (calls and definitions).
 		TSFuncMacro = { fg = cp.color5 }, -- For macro defined functions (calls and definitions): each macro_rules in Ruscp.
-		TSParameter = { fg = cp.color1, style = "italic" }, -- For parameters of a function.
+		TSParameter = { fg = cp.color1, style = "bold" }, -- For parameters of a function.
 		TSKeywordFunction = { fg = cp.color4, style = cnf.styles.keywords }, -- For keywords used to define a fuction.
 		TSKeyword = { fg = keywords, style = cnf.styles.keywords }, -- For keywords that don't fall in previous categories.
 		TSKeywordReturn = { fg = cp.color6 },
@@ -53,8 +53,8 @@ function M.get(cp)
 		-- TSError = { fg = cp.color5 }, -- For syntax/parser errors.
 		-- rustTSField = { fg = cp.black4 }, -- For fields.
 		TSLabel = { fg = cp.color10 }, -- For labels: label: in C and :label: in Lua.
-		TSMethod = { fg = cp.color10, style = "italic" }, -- For method calls and definitions.
-		TSNamespace = { fg = cp.color1, style = "italic" }, -- For identifiers referring to modules and namespaces.
+		TSMethod = { fg = cp.color10, style = "bold" }, -- For method calls and definitions.
+		TSNamespace = { fg = cp.color1, style = "bold" }, -- For identifiers referring to modules and namespaces.
 		-- TSNone              = { };    -- TODO: docs
 		-- TSParameterReference= { };    -- For references to parameters of a function.
 		tomlTSProperty = { fg = cp.color10 }, -- Differentiates between string and properties
@@ -65,7 +65,7 @@ function M.get(cp)
 		-- TSSymbol            = { };    -- For identifiers referring to symbols or atoms.
 		TSType = { fg = cp.color8 }, -- For types.
 		TSVariable = { fg = cp.white, style = cnf.styles.variables }, -- Any variable name that does not have another highlighcp.
-		TSTagAttribute = { fg = cp.color3, style = "italic" }, -- Tags like html tag names.
+		TSTagAttribute = { fg = cp.color3, style = "bold" }, -- Tags like html tag names.
 		TSTag = { fg = cp.color7 }, -- Tags like html tag names.
 		TSTagDelimiter = { fg = cp.color4 }, -- Tag delimiter like < > /
 		TSText = { fg = cp.white }, -- For strings considerated text in a markup language.
@@ -81,7 +81,7 @@ function M.get(cp)
 		TSLiteral = { fg = cp.color12, style = "italic" }, -- used for inline code in markdown and for doc in python (""")
 		TSTextReference = { fg = cp.color13, style = "bold" }, -- references
 		TSTitle = { fg = cp.color10, style = "bold" }, -- titles like: # Example
-		TSEmphasis = { fg = cp.color4, style = "italic" }, -- bold
+		TSEmphasis = { fg = cp.color4, style = "bold" }, -- bold
 		TSStrong = { fg = cp.color4, style = "bold" }, -- italic
 		TSStringEscape = { fg = cp.color6, style = cnf.styles.strings }, -- For escape characters within a string.
 
@@ -97,11 +97,11 @@ function M.get(cp)
 		javaTSConstant = { fg = cp.color12 },
 
 		-- typescript
-		typescriptTSProperty = { fg = cp.color13, style = "italic" }, -- Same as TSField.
+		typescriptTSProperty = { fg = cp.color13, style = "bold" }, -- Same as TSField.
 
 		-- css
 		cssTSType = { fg = cp.color13 },
-		cssTSProperty = { fg = cp.color8, style = "italic" }, -- Same as TSField.
+		cssTSProperty = { fg = cp.color8}, -- Same as TSField.
 
 		-- cpp
 		cppTSProperty = { fg = cp.white },

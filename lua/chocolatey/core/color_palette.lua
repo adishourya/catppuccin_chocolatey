@@ -11,10 +11,9 @@ local color_palette = {
 	color9 = "#a3be8c", -- mapper : CursorLineNr , SpellRare , TablineSel , String , diffAdded , DiffAdd
 	color10 = "#8aaabb", -- mapper : Directory , Folded , MoreMsg , FloatBorder , Question , SpellLocal , Title , Function , Type , qfFileName , htmlH2 , diffFile , DiffText , GlyphPalette4
 	color11 = "#F5E0DC", -- mapper : Operator (+ , -)
-	-- color12 = "#a3be8c", -- Character (\n) , healthSuccess , GlyphPalette2 , GlyphPalette6
 	color12 = "#81a1c1", -- Character (\n) , healthSuccess , GlyphPalette2 , GlyphPalette6
 	color13 = "#998396",
-	color14 = "#8a92bb", -- mapper : Statement
+	color14 = "#404040", -- mapper : Statement
 	white = "#d1c6b4",
 
 	gray2 = "#cdc0ad", -- mapper Pmenu fg
